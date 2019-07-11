@@ -49,14 +49,24 @@ class Berita
      *
      * @ORM\Column(type="datetime")
      */
-    public $tanggal;
+    private $tanggal;
 
     /**
      * @var Kategori Kategori dari berita ini.
      *
-     * @ORM\ManyToOne(ta–rgetEntity="Kategori", inversedBy="berita")
+     * @ORM\ManyToOne(targetEntity="Kategori")
      */
     public $kategori;
+
+    public function __construct()
+    {
+        $this->tanggal = new \DateTime("now");
+    }
+
+    public function getTanggal(): ?\DateTime
+    {
+        return $this->tanggal;
+    }
 
     public function getId(): ?int
     {

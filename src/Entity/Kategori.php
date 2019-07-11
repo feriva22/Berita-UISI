@@ -31,12 +31,6 @@ class Kategori
      */
     public $nama;
 
-    /**
-     * @var Berita[] Berita dalam kategori ini.
-     *
-     * @ORM\OneToMany(targetEntity="Berita", mappedBy="kategori", cascade={"persist", "remove"})
-     */
-    public $berita;
     
     public function getId(): ?int
     {
