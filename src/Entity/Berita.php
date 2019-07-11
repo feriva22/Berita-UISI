@@ -23,8 +23,6 @@ class Berita
      */
     private $id;
 
-
-
     /**
      * @var string nama berita
      *
@@ -33,7 +31,7 @@ class Berita
     public $judul;
 
     /**
-     * @var string the body of the review.
+     * @var string isi berita.
      *
      * @ORM\Column(type="text")
      */
@@ -56,7 +54,7 @@ class Berita
     /**
      * @var Kategori Kategori dari berita ini.
      *
-     * @ORM\ManyToOne(targetEntity="Kategori", inversedBy="berita")
+     * @ORM\ManyToOne(ta–rgetEntity="Kategori", inversedBy="berita")
      */
     public $kategori;
 

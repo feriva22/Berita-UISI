@@ -15,7 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Kategori
 {
     /**
-     * @var int Id dari  kategori ini   .
+     * @var int Id dari  kategori ini.
      *
      * @ORM\Id
      * @ORM\GeneratedValue
